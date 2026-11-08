@@ -6,10 +6,10 @@ A lively, responsive portfolio: pop-colour sticker design, a live three-phase wa
 Open `index.html` in any modern browser.
 
 ## Publish with GitHub Pages
-1. Upload the contents of this folder to the root of `monde627/Rollins-Bright-Wonder`.
-2. Commit to `main`.
-3. Settings → Pages → Deploy from a branch → `main` / `(root)` → Save.
+1. Open Settings → Pages in `CsHift1/Rollins-Bright-Wonder`.
+2. Choose **Deploy from a branch**, select `main` and `/(root)`, then save.
+3. GitHub Pages will show the published site URL in the same settings panel.
 
 ## Personalise
 - Swap the starter project cards for live demos, screenshots and repository links as you finish them.
-- Add a public email or contact link if you want visitors to reach you directly.
+- Keep project links and contact details current as your work evolves.

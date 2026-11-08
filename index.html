@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <div class="page">
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Rollins Bright Wonder, home"><span class="brand-mark">RW</span><span class="brand-name">Rollins<small>Bright Wonder</small></span></a>
@@ -27,7 +28,7 @@
     <button class="icon-btn menu-toggle" id="menu" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav"><span aria-hidden="true">☰</span></button>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero" id="home">
       <div class="hero-copy">
         <p class="chip chip-live"><i class="dot"></i> Kenya · 50 Hz country</p>
@@ -85,7 +86,7 @@
         </div>
         <div class="ohm-read">
           <div class="bulb" id="bulb" aria-hidden="true"><svg viewBox="0 0 80 100"><circle id="bulb-glass" cx="40" cy="38" r="26"/><path d="M30 64h20v10H30zM32 78h16M34 84h12" /><path d="M32 40l8 10 8-10" class="fil"/></svg></div>
-          <dl class="readout"><div><dt>Current</dt><dd id="i-out">1.00 A</dd></div><div><dt>Power</dt><dd id="p-out">240 W</dd></div></dl>
+          <dl class="readout" aria-live="polite" aria-atomic="true"><div><dt>Current</dt><dd id="i-out">1.00 A</dd></div><div><dt>Power</dt><dd id="p-out">240 W</dd></div></dl>
         </div>
       </div>
     </section>
@@ -95,21 +96,23 @@
       <div class="projects">
         <article class="project p-feature">
           <div class="pv pv-web" aria-hidden="true"><div class="bar"><i></i><i></i><i></i><span>rollins.dev</span></div><div class="mock"><b>RW</b><h4>Digital ideas.<br><em>Made real.</em></h4><i class="pill"></i><i class="orb"></i></div></div>
-          <div class="pinfo"><p class="ptype">Web development</p><h3>Personal Portfolio</h3><p>A responsive home for my background, learning journey and selected technical work, built to grow alongside my skills.</p><div class="pfoot"><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="plink" href="https://github.com/monde627/Rollins-Bright-Wonder" target="_blank" rel="noreferrer">View repository ↗</a></div></div>
+          <div class="pinfo"><p class="ptype">Web development</p><h3>Personal Portfolio</h3><p>A responsive home for my background, learning journey and selected technical work, built to grow alongside my skills.</p><div class="pfoot"><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="plink" href="https://github.com/CsHift1/Rollins-Bright-Wonder" target="_blank" rel="noreferrer">View repository ↗</a></div></div>
         </article>
         <article class="project">
-          <div class="pv pv-circuit" aria-hidden="true"><svg viewBox="0 0 240 150"><g fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path class="s-y" d="M20 40h60M150 40h70v70H150M90 110H20V40"/><path class="s-r" d="M80 28v24l12-6-12-6M92 28v24"/><path class="s-b" d="M100 110h8l6-14 8 28 8-28 8 14h12"/></g><g class="n"><circle cx="20" cy="40" r="5"/><circle cx="220" cy="40" r="5"/><circle cx="20" cy="110" r="5"/></g><text x="112" y="76" class="eq">V = I × R</text></svg></div>
-          <div class="pinfo"><p class="ptype">Electrical engineering</p><h3>Electrical Study Notes</h3><p>Structured notes and worked examples on electrical principles, three-phase systems, machines and measurements.</p><div class="pfoot"><div class="tags"><span>Circuits</span><span>Power</span></div><span class="status">In progress</span></div></div>
+          <div class="pv pv-circuit" aria-hidden="true"><svg viewBox="0 0 240 150"><g fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path class="s-y" d="M120 32v28M120 90v28M120 60H55v30M120 60h65v30"/><path class="s-r" d="M55 90v28M185 90v28"/></g><g class="n"><circle cx="120" cy="32" r="6"/><circle cx="55" cy="118" r="6"/><circle cx="185" cy="118" r="6"/></g><text x="101" y="82" class="eq">JAZA</text><text x="27" y="139" class="eq">AI</text><text x="82" y="139" class="eq">EXPERT</text><text x="166" y="139" class="eq">LOCAL</text></svg></div>
+          <div class="pinfo"><p class="ptype">Problem-solving prototype</p><h3>Jaza</h3><p>A mobile-first prototype for finding help with everyday problems through AI, human experts or local support.</p><div class="pfoot"><div class="tags"><span>AI</span><span>Human expertise</span><span>Local help</span></div><a class="plink" href="https://github.com/CsHift1/jaza" target="_blank" rel="noreferrer">View repository ↗</a></div></div>
         </article>
         <article class="project">
-          <div class="pv pv-code" aria-hidden="true"><pre><b>&gt;&gt;&gt;</b> def keep_building():
-    skills = []
-    while learning:
-        skills.append(practice())
-    return skills
+          <div class="pv pv-code" aria-hidden="true"><pre><b>$</b> watch_csv.py
 
-<i># progress through practice</i></pre></div>
-          <div class="pinfo"><p class="ptype">Programming</p><h3>Python Learning Lab</h3><p>Small programs and exercises that build logic, problem solving and confidence with code.</p><div class="pfoot"><div class="tags"><span>Python</span><span>Problem solving</span></div><span class="status">In progress</span></div></div>
+input/
+└─ contacts.csv
+      ↓
+output/
+└─ contacts.json
+
+<i># Python · standard library</i></pre></div>
+          <div class="pinfo"><p class="ptype">Python utility</p><h3>CSV Folder Watcher</h3><p>Watches a folder for CSV files and converts them to readable JSON using Python's standard library.</p><div class="pfoot"><div class="tags"><span>Python</span><span>CSV</span><span>JSON</span></div><a class="plink" href="https://github.com/CsHift1/csv-folder-watcher" target="_blank" rel="noreferrer">View repository ↗</a></div></div>
         </article>
       </div>
     </section>
@@ -129,12 +132,12 @@
           <li><span class="rl">Phone / WhatsApp</span><a href="tel:+254790862217" id="r-tel">+254 790 862 217</a><span class="rbtns"><a class="wa" href="https://wa.me/254790862217" target="_blank" rel="noreferrer">WhatsApp ↗</a><button class="copy" type="button" data-copy="+254790862217">Copy</button></span></li>
           <li><span class="rl">Location</span><span class="rv">Kenya</span></li>
         </ul>
-        <div class="actions"><a class="btn btn-y" href="https://github.com/monde627/Rollins-Bright-Wonder" target="_blank" rel="noreferrer">Connect on GitHub <span aria-hidden="true">↗</span></a><a class="btn btn-wa" href="https://wa.me/254790862217" target="_blank" rel="noreferrer">WhatsApp me <span aria-hidden="true">↗</span></a><a class="btn btn-light" href="https://linkedin.com/in/wonder-bright-20b4b1373/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
+        <div class="actions"><a class="btn btn-y" href="https://github.com/CsHift1" target="_blank" rel="noreferrer">Connect on GitHub <span aria-hidden="true">↗</span></a><a class="btn btn-wa" href="https://wa.me/254790862217" target="_blank" rel="noreferrer">WhatsApp me <span aria-hidden="true">↗</span></a><a class="btn btn-light" href="https://linkedin.com/in/wonder-bright-20b4b1373/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
       </div>
     </section>
   </main>
 
-  <footer class="footer"><span>© <span id="year">2026</span> Rollins Bright Wonder · Made with curiosity in Kenya</span><span class="flinks"><a href="https://github.com/monde627" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/wonder-bright-20b4b1373/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="#home">Back to top ↑</a></span></footer>
+  <footer class="footer"><span>© <span id="year">2026</span> Rollins Bright Wonder · Made with curiosity in Kenya</span><span class="flinks"><a href="https://github.com/CsHift1" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/wonder-bright-20b4b1373/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="#home">Back to top ↑</a></span></footer>
 </div>
 <script src="script.js"></script>
 </body>
