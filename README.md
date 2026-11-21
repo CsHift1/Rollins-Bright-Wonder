@@ -1,19 +1,36 @@
 # Rollins Bright Wonder — Portfolio
 
-A responsive, no-build portfolio connecting electrical engineering studies, freelance web development, digital products, and projects in progress. It includes an adjustable three-phase waveform, an Ohm's law experiment, light/dark themes, and a mobile navigation menu.
+Personal portfolio website for **Rollins Bright Wonder**, Electrical & Software Engineer based in Kenya.
 
-## Run locally
+## Pages
+| File | Description |
+|---|---|
+| `index.html` | Main portfolio (Hero, About, Projects, Expertise, Contact) |
+| `feedback.html` | Client feedback form |
 
-Open `index.html` in a modern browser. No install or build step is required.
+## Assets
+| File | Description |
+|---|---|
+| `styles.css` | Main stylesheet (dark theme, responsive) |
+| `index.css` | Alias import of `styles.css` |
+| `feedback.css` | Feedback-page-specific styles |
+| `script.js` | Main JS (nav, filters, scroll-reveal, clipboard, form) |
+| `feedback.js` | Feedback-page JS (form, nav, toast) |
+| `profile.jpg` | Profile photo (also used as favicon) |
 
-## Publish with GitHub Pages
+## Deployment Checklist
+- [ ] Replace `https://www.yourdomain.com/` in `index.html` with your real domain (canonical, OG tags, JSON-LD)
+- [ ] Sign up at [formspree.io](https://formspree.io), create a form, and replace `YOUR_FORM_ID` in the `<form action="...">` in `index.html`
+- [ ] Upload all files to your hosting provider (Netlify, GitHub Pages, Vercel, cPanel, etc.)
+- [ ] No build step required — pure HTML / CSS / JS
 
-1. Keep the site files at the root of `CsHift1/Rollins-Bright-Wonder`.
-2. In the repository settings, open **Pages**.
-3. Choose **Deploy from a branch**, select `main` and `/(root)`, then save.
+## Technologies
+- HTML5, CSS3, Vanilla JavaScript
+- Google Fonts (Inter + Space Grotesk)
+- Formspree (contact form backend)
+- Schema.org JSON-LD structured data
 
-## Update the portfolio
-
-- Replace or expand the in-progress project entries as the work develops.
-- Update the contact links in `index.html` if the public details change.
-- Keep the page self-contained and static so it remains easy to publish with GitHub Pages.
+## Contact
+- Email: rollinswonder@outlook.com
+- Phone / WhatsApp: +254 790 862 217
+- GitHub: [CsHift1](https://github.com/CsHift1)

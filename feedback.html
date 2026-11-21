@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Feedback &amp; Review — Rollins Bright Wonder</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#f8fafc" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="profile.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Link to Main Styles and Feedback Styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="feedback.css" />
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="nav-wrapper" id="main-nav">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html#hero" class="brand-logo">Rollins<span>.</span></a>
+            </div>
+
+            <nav class="nav-menu" id="nav-links">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#projects" class="nav-link">Selected Work</a>
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="feedback.html" class="nav-cta-btn" style="background: var(--color-primary);">Client Feedback</a>
+            </nav>
+
+            <button class="mobile-toggle" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- FEEDBACK SECTION -->
+    <main class="feedback-main">
+        <div class="form-header">
+            <span class="section-tag">Evaluation</span>
+            <h1>Client Feedback &amp; Review</h1>
+            <p>Thank you for partnering with me. Your perspective is invaluable in refining my engineering craft and ensuring premier client satisfaction.</p>
+        </div>
+
+        <div class="form-container">
+            <form id="clientFeedbackForm" action="#" method="POST">
+                
+                <!-- SECTION 1: CLIENT PROFILE -->
+                <fieldset>
+                    <legend>Client Information</legend>
+                    <div class="form-group">
+                        <label for="full-name">Your Full Name / Company <span class="required">*</span></label>
+                        <input type="text" id="full-name" name="fullName" placeholder="Jane Doe" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email-address">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email-address" name="email" placeholder="jane@company.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="service-select">Service Delivered <span class="required">*</span></label>
+                        <select id="service-select" name="serviceProvided" required>
+                            <option value="" disabled selected>Select the service received...</option>
+                            <optgroup label="Software &amp; Web">
+                                <option value="web-development">Web Application Development</option>
+                                <option value="ecommerce">E-Commerce Architecture</option>
+                                <option value="seo">SEO &amp; Performance Optimization</option>
+                            </optgroup>
+                            <optgroup label="Electrical &amp; Hardware">
+                                <option value="pcb-design">Custom PCB Layout (KiCad / EasyEDA)</option>
+                                <option value="electrical-install">Machine Electrical Installation</option>
+                                <option value="cad-modeling">3D CAD Modeling (FreeCAD)</option>
+                            </optgroup>
+                            <optgroup label="Strategy &amp; Consulting">
+                                <option value="project-mgmt">Project Management</option>
+                                <option value="data-analysis">Data Analysis</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- SECTION 2: SERVICE METRICS -->
+                <fieldset>
+                    <legend>Performance Ratings</legend>
+                    <div class="form-group">
+                        <label for="overall-rating">Overall Experience &amp; Satisfaction (1 to 10)</label>
+                        <input type="range" id="overall-rating" name="overallRating" min="1" max="10" step="1" value="10" list="rating-scale" />
+                        <datalist id="rating-scale">
+                            <option value="1" label="1"></option>
+                            <option value="5" label="5"></option>
+                            <option value="10" label="10"></option>
+                        </datalist>
+                    </div>
+
+                    <fieldset class="nested-fieldset">
+                        <legend>Key Competencies (1 = Poor, 5 = Exceptional)</legend>
+                        <div class="grid-3-col">
+                            <div class="form-group">
+                                <label for="communication-rating">Communication:</label>
+                                <input type="number" id="communication-rating" name="ratingCommunication" min="1" max="5" value="5" placeholder="1-5" />
+                            </div>
+                            <div class="form-group">
+                                <label for="deadline-rating">Timeliness:</label>
+                                <input type="number" id="deadline-rating" name="ratingDeadlines" min="1" max="5" value="5" placeholder="1-5" />
+                            </div>
+                            <div class="form-group">
+                                <label for="quality-rating">Quality of Work:</label>
+                                <input type="number" id="quality-rating" name="ratingQuality" min="1" max="5" value="5" placeholder="1-5" />
+                            </div>
+                        </div>
+                    </fieldset>
+                </fieldset>
+
+                <!-- SECTION 3: QUALITATIVE FEEDBACK -->
+                <fieldset>
+                    <legend>Detailed Reflections</legend>
+                    <div class="form-group">
+                        <label for="best-part">What stood out most about our collaboration?</label>
+                        <textarea id="best-part" name="highlight" rows="3" placeholder="Communication, problem solving, speed, technical precision..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="improvements">Where is there room for future growth?</label>
+                        <textarea id="improvements" name="improvements" rows="3" placeholder="Any suggestions or feedback..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="testimonial">Public Testimonial</label>
+                        <textarea id="testimonial" name="testimonial" rows="3" placeholder="A brief quote summarizing your experience working together..."></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- SECTION 4: PERMISSIONS -->
+                <fieldset>
+                    <legend>Permissions</legend>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="permission-testimonial" name="permissionTestimonial" value="granted" checked />
+                        <label for="permission-testimonial">I grant permission to feature this feedback as a public testimonial.</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="permission-contact" name="permissionContact" value="granted" />
+                        <label for="permission-contact">I am open to being contacted for a direct reference check.</label>
+                    </div>
+                </fieldset>
+
+                <!-- SUBMIT BUTTON -->
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">
+                        <span>Submit Feedback</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </div>
+
+            </form>
+
+            <!-- Success Message -->
+            <div id="success-message" class="success-message">
+                <h2>Thank You!</h2>
+                <p>Your feedback has been successfully submitted. I deeply appreciate your time and review.</p>
+                <a href="index.html" class="btn-primary" style="margin-top: 1.5rem; display: inline-flex;">Return to Portfolio</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="agency-footer">
+        <div class="footer-inner">
+            <div class="brand">
+                <a href="index.html#hero" class="brand-logo">Rollins<span>.</span></a>
+                <div class="footer-copy">
+                    &copy; <span id="year"></span> Rollins Bright Wonder. All rights reserved.
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#projects">Selected Work</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast-notice" id="toast" aria-live="polite"></div>
+
+    <!-- Scripts -->
+    <script src="feedback.js"></script>
+</body>
+</html>

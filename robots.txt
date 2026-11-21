@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://rollinswonderbrightke.netlify.app/sitemap.xml
